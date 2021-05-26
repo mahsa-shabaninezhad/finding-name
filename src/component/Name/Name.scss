@@ -2,16 +2,35 @@
     display: inline;
     padding: 1rem 2rem;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform .5s;
+
+    &:hover{
+        transform: scale(1.1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    &:active{
+        transform: scale(1.05);
+    }
 }
 
 .girl{
     background-color: #ffc5e7;
     color: #b43f83;
     border: 1px solid #b43f83;
+
+    &:hover{
+        background-color: lighten(#ffc5e7, 2%);
+    }
 }
 
 .boy{
-    background-color: cyan;
+    background-color: #00ffff;
     color: #00a2ff;
     border: 1px solid #00a2ff;
+
+    &:hover{
+        background-color: lighten(#00ffff, 4%);
+    }
 }
