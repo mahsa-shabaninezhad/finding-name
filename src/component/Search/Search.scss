@@ -1,0 +1,12 @@
+.search{
+    width: 100%;
+    border: 10px solid steelblue;
+    padding: 15px;
+    margin-bottom: 10rem;
+
+    &::placeholder{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+}
