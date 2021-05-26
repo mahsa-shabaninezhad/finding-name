@@ -4,9 +4,10 @@ import Name from '../Name/Name'
 import './NamesList.scss'
 
 
-const NamesList = ({data}) => {
-    const showNames = data.map(person => <Name data={person}/>)
-    
+const NamesList = ({data, search}) => {
+    const filterData = data.filter(person => person.name.toLocaleLowerCase().startsWith(search))
+    const showNames = filterData.map(person => <Name data={person}/>)    
+
     return (
         <div className='namesListContainer'>
             {showNames}
