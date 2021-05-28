@@ -1,0 +1,18 @@
+.favorites{
+    width: 100%;
+    text-align: center;
+    padding: 5rem 0;
+
+    &__header{
+        color: darken(#dddbd9, 15%);
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
